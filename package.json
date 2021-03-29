@@ -1,0 +1,30 @@
+{
+  "name": "manypetsvr",
+  "version": "1.0.0",
+  "description": "A VR platform to get a ManyPets quote",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "serve": "live-server --https=./node_modules/live-server-https --port=3000",
+    "deploy": "ghpages"
+  },
+  "devDependencies": {
+    "ghpages": "0.0.3",
+    "live-server": "^1.2.0",
+    "live-server-https": "0.0.2",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "keywords": [
+    "manypets",
+    "aframe",
+    "aframe-scene",
+    "webvr",
+    "vr"
+  ],
+  "author": "Fergus Mullineux",
+  "license": "ISC",
+  "dependencies": {
+    "aframe": "^1.2.0"
+  }
+}

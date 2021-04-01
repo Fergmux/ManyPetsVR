@@ -1,0 +1,26 @@
+{
+  "agency": "BBM",
+  "data": {
+    "insured_entity": {
+      "species": "DOG",
+      "breed": {
+        "name": "Chow Chow",
+        "value": "CHOW_CHOW"
+      },
+      "dob": "2018-05-01",
+      "gender": "FEMALE",
+      "pedigree": true,
+      "pedigree_type": "PEDIGREE",
+      "pet_address_postcode": "B1 4EG",
+      "spayed_neutered": true,
+      "pet_name": "Amy Whinehouse",
+      "value": 30000
+    },
+    "policy": {
+      "inception_date": "2021-03-31T00:00:00Z"
+    }
+  },
+  "product_line_key": "cat-dog-pio",
+  "source": "swagger_ui",
+  "url": "https://admin-api.devpolicies.io/quick-quote?token_type=resume"
+}

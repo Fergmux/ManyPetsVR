@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import 'aframe'
-import '../dist/aframe-super-keyboard'
-import '../dist/grab'
-import '../dist/aabb-collider'
+import '../js/aframe-super-keyboard'
+import '../js/grab'
+import '../js/aabb-collider'
 
 createApp(App).mount('#app')

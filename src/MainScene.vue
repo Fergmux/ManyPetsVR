@@ -190,7 +190,7 @@ export default {
 
     const addAttribute = value => {
       petData.value = {...petData.value, ...value}
-      console.log(value);
+      console.log(value)
       moveForm()
     }
 

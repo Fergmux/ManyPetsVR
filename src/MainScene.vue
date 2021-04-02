@@ -26,10 +26,10 @@
     <a-box mixin="spotlight-box" position="-4 0.2 -5.5" />
     <a-box mixin="spotlight-box" position="0 0.2 -5.5" />
     <a-box mixin="spotlight-box" position="4 0.2 -5.5" />
-    <a-entity mixin="spotlight" position="-4 1 -5" ></a-entity>
-    <a-entity mixin="spotlight" position="0 1 -5"></a-entity>
-    <a-entity mixin="spotlight" position="4 1 -5"></a-entity>
-    <a-entity light="type: ambient; intensity: 1;"></a-entity>
+    <a-entity mixin="spotlight" position="-4 1 -5" />
+    <a-entity mixin="spotlight" position="0 1 -5" />
+    <a-entity mixin="spotlight" position="4 1 -5" />
+    <a-entity light="type: ambient; intensity: 1;" />
 
     <a-box 
       position="-0.5 1.3 -0.1"
@@ -176,9 +176,7 @@ export default {
       }
     }
 
-    const openKeyboard = open => { 
-      showKeyboard.value = open ?? true
-    }
+    const openKeyboard = open => { showKeyboard.value = open ?? true }
 
     const submitValue = event => {
       if(event.detail.value) {
@@ -190,15 +188,10 @@ export default {
 
     const addAttribute = value => {
       petData.value = {...petData.value, ...value}
-      console.log(value)
       moveForm()
     }
 
-    watch(touching, touch => {
-      if (touch) {
-        moveForm(true)
-      }
-    })
+    watch(touching, touch => { if (touch) { moveForm(true) } })
 
     const setTouch = newtouch => { 
       if (touching.value === false && newtouch === true) {

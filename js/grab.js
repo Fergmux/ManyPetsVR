@@ -64,7 +64,7 @@ AFRAME.registerComponent('grab', {
     position = hitEl.getAttribute('position');
     hitEl.emit('movex', position.x);
     let x = position.x + this.deltaPosition.x
-    x = x > 0.5 ? 0.5 : x < -0.5 ? -0.5 : x
+    x = x > 0.5 ? 0.5 : (x < -0.5 ? -0.5 : x)
     hitEl.setAttribute('position', {
       x,
       y: position.y + this.deltaPosition.y,

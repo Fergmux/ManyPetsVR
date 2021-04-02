@@ -2,7 +2,6 @@
   "name": "manypetsvr",
   "version": "1.0.0",
   "description": "A VR platform to get a ManyPets quote",
-  "main": "index.js",
   "scripts": {
     "start": "vite --port=3000 --https",
     "serve": "vite --port=3000 --https",
